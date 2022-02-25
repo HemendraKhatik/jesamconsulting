@@ -1,0 +1,32 @@
+.fourthSectionContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--background);
+  padding: 5%;
+}
+
+.mainParagraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #f4f4f2;
+  margin-top: 30px;
+}
+
+.row {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}

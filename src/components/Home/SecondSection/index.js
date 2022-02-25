@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./index.module.css";
+import Button from "../../Reusable/Button";
 
 export default function SecondSection() {
   return (
@@ -10,9 +11,10 @@ export default function SecondSection() {
         sind prämierte und engagierte Entwickler mit jahrelanger Erfahrung, die
         Deine digitale Lösung realisieren.
       </h1>
-      <div className={Style.cta}>APP-Entwicklung</div>
-      <div className={Style.cta}>Software-Entwicklung</div>
-      <div className={Style.cta}>WEB-ENTWICKLUNG</div>
+
+      <Button style={{ marginTop: 50 }} title="APP-Entwicklung" />
+      <Button style={{ marginTop: 50 }} title="Software-Entwicklung" />
+      <Button style={{ marginTop: 50 }} title="WEB-ENTWICKLUNG" />
     </div>
   );
 }

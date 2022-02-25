@@ -1,0 +1,24 @@
+.textCardContainer {
+  width: 300px;
+  height: 100%;
+}
+
+.textCardHeading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #f4f4f2;
+}
+
+.textCardParagraph {
+  margin-top: 60px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--primary-color);
+}

@@ -1,0 +1,16 @@
+.thirdSectionContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: #cea5ad;
+  padding: 5%;
+}
+
+.mainHeading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}

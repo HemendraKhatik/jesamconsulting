@@ -1,0 +1,13 @@
+.cta {
+  background-color: var(--primary-background);
+  width: fit-content;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 65px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
