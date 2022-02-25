@@ -1,8 +1,11 @@
 .thirdSectionContainer {
   width: 100%;
-  min-height: 100vh;
+  min-height: 170vh;
   background: #cea5ad;
   padding: 5%;
+  background-image: url("../../../assets/home/mike.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 180px;
 }
 
 .mainHeading {
@@ -13,4 +16,11 @@
   line-height: 80px;
   text-transform: uppercase;
   color: var(--primary-color);
+}
+
+.companies {
+  margin-top: 36px;
+}
+.companies img {
+  margin: 0px 14px;
 }
