@@ -4,8 +4,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -13,6 +12,7 @@ body {
   --primary-background: #ccff00;
   --primary-text-color: #000000;
   --primary-color: #ccff00;
+  --tertiary-background: #70aabc;
 }
 
 code {

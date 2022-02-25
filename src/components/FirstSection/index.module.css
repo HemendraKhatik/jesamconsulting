@@ -1,0 +1,26 @@
+.firstSectionContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--tertiary-background);
+  padding: 100px 0% 10% 7%;
+}
+
+.mainHeading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.mainParagraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  width: 50%;
+  margin-top: 20px;
+}
