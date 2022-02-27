@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Style from "./index.module.css";
 import Balloon from "../../../assets/home/balloon.svg";
+import useOnScreen from "../../../hooks/useOnScreen";
 
 export default function FirstSection() {
+  var ref = useRef();
+  const isVisible = useOnScreen(ref);
+  const [animate, setAnimate] = useState(false);
+  useEffect(() => {
+    if (isVisible) {
+      setAnimate(true);
+    }
+  }, [isVisible]);
+
   return (
     <div className={Style.firstSectionContainer}>
       <div className={Style.left}>
@@ -20,7 +30,12 @@ export default function FirstSection() {
         </p>
       </div>
       <div className={Style.right}>
-        <img src={Balloon} alt="Balloon icon" />
+        <img
+          className={animate ? Style.bubble : null}
+          ref={ref}
+          src={Balloon}
+          alt="Balloon icon"
+        />
       </div>
     </div>
   );

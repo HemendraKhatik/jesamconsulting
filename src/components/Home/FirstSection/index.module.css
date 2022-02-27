@@ -2,9 +2,10 @@
   width: 100%;
   min-height: 100vh;
   background-color: var(--tertiary-background);
-  padding: 7% 0% 5% 5%; 
+  padding: 7% 0% 5% 5%;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .mainHeading {
@@ -41,4 +42,16 @@
   bottom: -10%;
   right: -20px;
   object-fit: contain;
+}
+
+.bubble {
+  animation: bubbleAnimation 5s;
+}
+@keyframes bubbleAnimation {
+  from {
+    right: -500px;
+  }
+  to {
+    bottom: -20px;
+  }
 }

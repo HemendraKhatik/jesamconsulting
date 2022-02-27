@@ -4,6 +4,7 @@ import CompanyOne from "../../../assets/home/company1.png";
 import CompanyTwo from "../../../assets/home/company2.png";
 import CompanyThree from "../../../assets/home/company3.png";
 import Slider from "../../Slider";
+import Sound from "../Svg/Sound";
 // import Mike from "../../../assets/home/mike.svg";
 
 export default function ThirdSection() {
@@ -20,6 +21,8 @@ export default function ThirdSection() {
       <div className={Style.slider}>
         <Slider />
       </div>
+      <Sound style={Style.sound} />
+
       {/* <img src={Mike} alt="icon " /> */}
     </div>
   );

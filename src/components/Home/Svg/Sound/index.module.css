@@ -1,0 +1,19 @@
+.sound {
+ display: none;
+}
+
+
+.animation {
+  display: block;
+  animation: visible 2s;
+  transform-origin: center;
+}
+
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

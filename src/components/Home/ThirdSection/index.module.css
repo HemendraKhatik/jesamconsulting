@@ -3,9 +3,10 @@
   min-height: 170vh;
   background: #cea5ad;
   padding: 5%;
-  background-image: url("../../../assets/home/mike.svg");
+  /* background-image: url("../../../assets/home/mike.svg");
   background-repeat: no-repeat;
-  background-position: 0px 180px;
+  background-position: 0px 180px; */
+  position: relative;
 }
 
 .mainHeading {
@@ -20,13 +21,22 @@
 
 .companies {
   margin-top: 36px;
+  height: 35vh;
 }
 .companies img {
+  height:100%;
   margin: 0px 14px;
 }
 
-.slider{
-  width:240px;
+.slider {
+  width: 240px;
   height: 8px;
   margin-top: 33px;
 }
+
+.sound {
+  position: absolute;
+  top: 13%;
+  left: 0;
+}
+
