@@ -33,8 +33,10 @@
 
 .sound {
   position: absolute;
-  top: 15%;
-  left: 0;
+  top: 10%;
+  right: 2%;
+  transform: rotate(10deg);
+
 }
 
 .mobileSoundSvg {
