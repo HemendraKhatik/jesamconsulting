@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Style from "./index.module.css";
 import useOnScreen from "../../../../hooks/useOnScreen";
+
 export default function Sound({ style }) {
   var ref = useRef();
   const isVisible = useOnScreen(ref);
@@ -18,7 +19,6 @@ export default function Sound({ style }) {
         setAnimateThree(true);
       }, 1000);
     }
-    console.log("dekho ", isVisible);
   }, [isVisible]);
 
   return (

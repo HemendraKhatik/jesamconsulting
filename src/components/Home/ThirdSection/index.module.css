@@ -1,6 +1,6 @@
 .thirdSectionContainer {
   width: 100%;
-  min-height: 170vh;
+  min-height: 160vh;
   background: #cea5ad;
   padding: 5%;
   position: relative;
@@ -18,7 +18,7 @@
 
 .companies {
   margin-top: 36px;
-  height: 35vh;
+  height: 25vh;
 }
 .companies img {
   height: 100%;
@@ -33,11 +33,22 @@
 
 .sound {
   position: absolute;
-  top: 13%;
+  top: 15%;
   left: 0;
 }
 
+.mobileSoundSvg {
+  display: none;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  transform: rotate(-20deg);
+}
+
 @media screen and (max-width: 834px) {
+  .thirdSectionContainer {
+    min-height: 100vh;
+  }
   .mainHeading {
     font-size: 50px;
     line-height: 60px;
@@ -45,6 +56,29 @@
 
   .companies {
     margin-top: 36px;
-    height: auto;
+    height: 17vh;
+  }
+
+  .mobileSoundSvg {
+    display: block;
+  }
+  .sound {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mainHeading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .companies {
+    margin-top: 36px;
+    height: 10vh;
+  }
+
+  .mobileSoundSvg {
+    transform: rotate(5deg);
   }
 }

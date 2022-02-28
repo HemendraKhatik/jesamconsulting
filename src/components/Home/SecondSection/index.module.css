@@ -19,3 +19,10 @@
     line-height: 29px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .mainHeading {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

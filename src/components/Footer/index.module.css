@@ -30,6 +30,7 @@
   font-size: 25px;
   line-height: 30px;
   color: #f4f4f2;
+  margin-top: 22px;
 }
 
 .innnerContainer .left p {
@@ -41,16 +42,19 @@
   color: #f4f4f2;
 }
 
-.innnerContainer .center nav {
+.mobileNav{
+  display: none;
+}
+.nav {
   width: 100%;
   height: 100%;
 }
 
-.innnerContainer .center nav ul {
+.nav ul {
   list-style: none;
 }
 
-.innnerContainer .center nav ul li {
+.nav ul li {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -107,7 +111,7 @@
 }
 
 @media screen and (max-width: 834px) {
-  .innnerContainer .center nav ul li {
+  .nav ul li {
     font-size: 18px;
     line-height: 22px;
   }
@@ -140,5 +144,25 @@
   .copywrite {
     font-size: 12px;
     line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .innnerContainer {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    padding: 5%;
+  }
+
+  .innnerContainer .center {
+    display: none;
+  }
+
+  .mobileNav{
+    display: block;
+    flex: 1;
+    padding: 5%;
   }
 }

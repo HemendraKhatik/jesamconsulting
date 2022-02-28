@@ -62,3 +62,27 @@
     margin-top: 35px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .container {
+    min-height: 90vh;
+    padding: 120px 5% 1% 5%; 
+  }
+
+  .mainHeading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .mainParagraph {
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .endLines {
+    margin-top: 60px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}

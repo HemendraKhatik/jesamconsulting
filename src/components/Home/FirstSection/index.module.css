@@ -76,9 +76,7 @@
     line-height: 29px;
     width: 62%;
   }
-  .mobileBalloon {
-    flex: 1;
-  }
+
 
   .firstSectionContainer img {
     width: 500px;
@@ -93,6 +91,44 @@
   @keyframes bubbleAnimationMobile {
     from {
       right: -500px;
+    }
+    to {
+      right: -100px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .firstSectionContainer {
+    flex-direction: column;
+    padding: 7% 2% 0% 2.5%;
+  }
+  .mainHeading {
+    width: 95%;
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .mainParagraph {
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+
+  .firstSectionContainer img {
+    width: 400px;
+    height: 262px;
+    right: -100px;
+  }
+
+  .bubble {
+    animation: bubbleAnimationMobile 5s;
+  }
+
+  @keyframes bubbleAnimationMobile {
+    from {
+      right: -400px;
     }
     to {
       right: -100px;

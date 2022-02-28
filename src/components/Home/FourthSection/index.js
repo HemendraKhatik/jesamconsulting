@@ -1,9 +1,12 @@
 import React from "react";
+import { useWindowSize } from "react-use";
 import Button from "../../Reusable/Button";
 import TextCard from "../../Reusable/TextCard";
 import Style from "./index.module.css";
 
 export default function FourthSection() {
+  const { width } = useWindowSize();
+
   return (
     <div className={Style.fourthSectionContainer}>
       <p className={Style.mainParagraph}>
@@ -43,7 +46,7 @@ export default function FourthSection() {
 
       <div className={Style.buttonContainer}>
         <Button title="Über uns" />
-        <Button title="Kostenlos beraten lassen" />
+        <Button  style={{ marginTop: width <= 400 ? 50 : 0 }} title="Kostenlos beraten lassen" />
       </div>
     </div>
   );

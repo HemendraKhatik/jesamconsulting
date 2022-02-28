@@ -5,6 +5,7 @@ import CompanyTwo from "../../../assets/home/company2.png";
 import CompanyThree from "../../../assets/home/company3.png";
 import Slider from "../../Slider";
 import Sound from "../Svg/Sound";
+import Tab from "../Svg/Sound/Tab";
 // import Mike from "../../../assets/home/mike.svg";
 
 export default function ThirdSection() {
@@ -22,7 +23,7 @@ export default function ThirdSection() {
         <Slider />
       </div>
       <Sound style={Style.sound} />
-
+      <Tab style={Style.mobileSoundSvg} />
       {/* <img src={Mike} alt="icon " /> */}
     </div>
   );

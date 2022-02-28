@@ -40,3 +40,20 @@
     line-height: 40px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .mainParagraph {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .row div{
+    margin-top: 50px;
+  }
+  .buttonContainer {
+    flex-direction: column;
+  }
+}

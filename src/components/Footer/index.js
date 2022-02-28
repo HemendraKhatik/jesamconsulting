@@ -10,6 +10,16 @@ export default function Footer() {
   return (
     <footer className={Style.footerContainer} >
       <div className={Style.innnerContainer}>
+      <div className={Style.mobileNav}>
+          <nav className={Style.nav}>
+            <ul>
+              <li>WEBSITE</li>
+              <li>APPLIKATION</li>
+              <li>SOFTWARE</li>
+              <li>KONTAKT</li>
+            </ul>
+          </nav>
+        </div>
         <div className={Style.left}>
           <img src={Logo} alt="jesamconsulting logo" />
           <h1>IMPRESSUM</h1>
@@ -19,7 +29,7 @@ export default function Footer() {
           </p>
         </div>
         <div className={Style.center}>
-          <nav>
+          <nav className={Style.nav}>
             <ul>
               <li>WEBSITE</li>
               <li>APPLIKATION</li>
