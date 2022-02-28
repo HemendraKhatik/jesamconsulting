@@ -6,7 +6,6 @@ import { useWindowSize } from "react-use";
 export default function SecondSection() {
   const { width } = useWindowSize();
 
-
   return (
     <div className={Style.secondContainer}>
       <h1 className={Style.mainHeading}>
@@ -17,15 +16,15 @@ export default function SecondSection() {
       </h1>
 
       <Button
-        style={{ marginTop: width <= 400 ? 20 : 50 }}
+        style={{ marginTop: width <= 450 ? 20 : 50 }}
         title="APP-Entwicklung"
       />
       <Button
-        style={{ marginTop: width <= 400 ? 20 : 50 }}
+        style={{ marginTop: width <= 450 ? 20 : 50 }}
         title="Software-Entwicklung"
       />
       <Button
-        style={{ marginTop: width <= 400 ? 20 : 50 }}
+        style={{ marginTop: width <= 450 ? 20 : 50 }}
         title="WEB-ENTWICKLUNG"
       />
     </div>

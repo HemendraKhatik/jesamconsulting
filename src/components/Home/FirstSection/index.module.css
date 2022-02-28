@@ -98,7 +98,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .firstSectionContainer {
     flex-direction: column;
     padding: 7% 2% 0% 2.5%;
@@ -118,7 +118,7 @@
 
 
   .firstSectionContainer img {
-    /* width: 400px;
+    /* width: 450px;
     height: 262px; */
     right: -100px;
   }
@@ -129,7 +129,7 @@
 
   @keyframes bubbleAnimationMobile {
     from {
-      right: -400px;
+      right: -450px;
     }
     to {
       right: -100px;
