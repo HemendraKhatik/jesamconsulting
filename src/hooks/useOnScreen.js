@@ -15,7 +15,7 @@ export default function useOnScreen(ref) {
         observer.disconnect();
       };
     }
-  }, []);
+  });
 
   return isIntersecting;
 }
