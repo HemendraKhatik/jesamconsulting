@@ -1,0 +1,22 @@
+.carousel .control-dots {
+  text-align: left !important;
+  padding: 0px;
+  position: absolute;
+  bottom: 10vh;
+  left: 0px;
+  padding-left: 9%;
+}
+.carousel .control-dots .dot {
+  width: 9% !important;
+  height: 7px !important;
+  border-radius: 3.5px !important;
+  background-color: #000000 !important;
+}
+
+@media screen and (max-width: 450px) {
+  .carousel .control-dots {
+    bottom: 2vh;
+    left: 0px;
+    padding-left: 5%;
+  }
+}
