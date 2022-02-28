@@ -3,9 +3,6 @@
   min-height: 170vh;
   background: #cea5ad;
   padding: 5%;
-  /* background-image: url("../../../assets/home/mike.svg");
-  background-repeat: no-repeat;
-  background-position: 0px 180px; */
   position: relative;
 }
 
@@ -24,7 +21,7 @@
   height: 35vh;
 }
 .companies img {
-  height:100%;
+  height: 100%;
   margin: 0px 14px;
 }
 
@@ -40,3 +37,14 @@
   left: 0;
 }
 
+@media screen and (max-width: 834px) {
+  .mainHeading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .companies {
+    margin-top: 36px;
+    height: auto;
+  }
+}

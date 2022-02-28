@@ -12,3 +12,10 @@
   line-height: 44px;
   color: var(--primary-color);
 }
+
+@media screen and (max-width: 834px) {
+  .mainHeading {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

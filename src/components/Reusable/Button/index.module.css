@@ -11,3 +11,10 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+@media screen and (max-width: 834px) {
+  .cta {
+    font-size: 20px;
+    padding: 0px 30px;
+  }
+}

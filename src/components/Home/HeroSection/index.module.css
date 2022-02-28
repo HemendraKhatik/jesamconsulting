@@ -6,6 +6,7 @@
 }
 
 .mainHeading {
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
   font-size: 65px;
@@ -37,4 +38,27 @@
   margin-top: 73px;
   text-transform: uppercase;
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 834px) {
+  .container {
+    min-height: 100vh;
+    padding: 200px 10% 5% 5%;
+  }
+
+  .mainHeading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .mainParagraph {
+    font-size: 24px;
+    line-height: 29px;
+    width: 61%;
+  }
+  .endLines {
+    font-size: 45px;
+    line-height: 60px;
+    margin-top: 35px;
+  }
 }

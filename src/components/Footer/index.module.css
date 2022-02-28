@@ -18,6 +18,11 @@
 .innnerContainer .center {
   flex: 2;
 }
+
+.innnerContainer .center {
+  padding-left: 10%;
+}
+
 .innnerContainer .left h1 {
   font-family: Montserrat;
   font-style: normal;
@@ -62,7 +67,12 @@
 .contactItem {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-top: 30px;
+}
+.contactItem img {
+  width: 40px;
+  height: 40px;
 }
 
 .contactItem h1 {
@@ -94,4 +104,41 @@
   line-height: 22px;
   color: #f4f4f2;
   margin-top: 80px;
+}
+
+@media screen and (max-width: 834px) {
+  .innnerContainer .center nav ul li {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .innnerContainer .left h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .innnerContainer .left p {
+    font-size: 13px;
+  }
+
+  .contactItem {
+    margin-top: 15px;
+  }
+
+  .contactItem h1 {
+    font-size: 11px;
+    line-height: 40px;
+  }
+  .contactItem h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contactItem img {
+    width: 30px;
+    height: 30px;
+  }
+  .copywrite {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
