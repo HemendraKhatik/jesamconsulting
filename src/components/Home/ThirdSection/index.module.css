@@ -4,6 +4,7 @@
   background: #cea5ad;
   padding: 5%;
   position: relative;
+  overflow: hidden;
 }
 
 .mainHeading {

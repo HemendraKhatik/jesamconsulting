@@ -10,7 +10,6 @@ export default function Tab({ style }) {
   const [animateThree, setAnimateThree] = useState(false);
 
   useEffect(() => {
-    console.log("Test");
     if (isVisible) {
       setAnimateOne(true);
       setTimeout(() => {
