@@ -13,6 +13,10 @@
   background-color: #000000 !important;
 }
 
+.carousel .slide {
+  text-align: left !important;
+}
+
 @media screen and (max-width: 450px) {
   .carousel .control-dots {
     bottom: 2vh;

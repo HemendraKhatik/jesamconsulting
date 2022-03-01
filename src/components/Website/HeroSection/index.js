@@ -12,7 +12,7 @@ export default function HeroSection() {
       showThumbs={false}
       showStatus={false}
       showArrows={false}
-      autoPlay
+      autoPlay={false}
       verticalSwipe="natural"
     >
       {carouselData.map((slide, index) => {

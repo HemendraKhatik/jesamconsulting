@@ -15,22 +15,6 @@
   margin-top: 3rem;
 }
 
-.row {
-  margin-top: 10rem;
-  width: 100%;
-  min-height: 45rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.buttonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 10rem;
-}
-
 @media screen and (max-width: 834px) {
   .fourthSectionContainer {
     padding: 2.5%;
@@ -45,15 +29,5 @@
   .mainParagraph {
     font-size: 1.3rem;
     line-height: 1.7rem;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-  .row div {
-    margin-top: 5rem;
-  }
-  .buttonContainer {
-    flex-direction: column;
   }
 }

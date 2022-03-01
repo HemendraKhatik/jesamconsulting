@@ -10,7 +10,7 @@
   font-size: 36px;
   line-height: 44px;
   text-transform: uppercase;
-  color: #f4f4f2;
+  color: var(--primary-color);
 }
 
 .textCardParagraph {
@@ -20,7 +20,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: var(--primary-color);
+  color: #f4f4f2;
 }
 
 @media screen and (max-width: 834px) {
