@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../Reusable/Button";
-import WhyWe from "../../Reusable/WhyWe";
+import HowWeWork from "../../Reusable/HowWeWork";
 import Style from "./index.module.css";
 
 export default function FourthSection() {
@@ -27,7 +27,7 @@ export default function FourthSection() {
 
       <Button style={{ marginTop: "5rem" }} title="Kostenlos beraten lassen" />
 
-      <WhyWe />
+      <HowWeWork />
     </div>
   );
 }

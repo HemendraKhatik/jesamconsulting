@@ -37,6 +37,9 @@
   cursor: pointer;
 }
 
+.nav ul li:hover{
+  opacity: 0.6;
+}
 .mobileNav {
   /* display: none; */
   position: fixed;

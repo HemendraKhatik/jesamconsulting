@@ -14,7 +14,7 @@ export default function Header({ background, color, isDarkLogo }) {
   const redirectToHome = () => {
     navigate("/");
   };
-  
+
   return (
     <header
       style={{ backgroundColor: background ? background : "var(--background)" }}
@@ -32,9 +32,11 @@ export default function Header({ background, color, isDarkLogo }) {
               WEBSITE
             </li>
           </Link>
-          <li style={{ color: color ? color : "var(--primary-color)" }}>
-            APPLIKATION
-          </li>
+          <Link to="/application">
+            <li style={{ color: color ? color : "var(--primary-color)" }}>
+              APPLIKATION
+            </li>
+          </Link>
           <li style={{ color: color ? color : "var(--primary-color)" }}>
             SOFTWARE
           </li>

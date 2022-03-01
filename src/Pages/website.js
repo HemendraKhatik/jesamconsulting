@@ -1,5 +1,5 @@
 import React from "react";
-import FirstSection from "../components/Website/FirstSection";
+import WhyWe from "../components/Reusable/WhyWe";
 import HeroSection from "../components/Website/HeroSection";
 import Base from "./Base";
 
@@ -12,7 +12,7 @@ export default function website() {
         isDarkLogo={true}
       >
         <HeroSection />
-        <FirstSection />
+        <WhyWe />
       </Base>
     </React.Fragment>
   );

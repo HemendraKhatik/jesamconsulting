@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+  padding: 4% 8%;
+  background-color: #70aabc;
+}
+
+.mainHeading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 8rem;
+  margin-bottom: 3rem;
+  border-bottom: 0.3rem solid #000000;
+  padding-bottom: 5rem;
+}
+
+.mainParagraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  color: #000000;
+  padding-top: 2.5rem;
+  padding-left: 5rem;
+}
+
+.summary {
+  display: flex;
+  align-items: flex-end;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.summary::before {
+  margin-right: 1ch;
+  display: inline-block;
+  transition: 0.5s;
+  content: "\203A"; /* marker */
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+.details[open] summary::before {
+  transform: rotate(-90deg);
+}
+.details {
+  border-bottom: 0.3rem solid #000000;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}

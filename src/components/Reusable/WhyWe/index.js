@@ -1,35 +1,37 @@
 import React from "react";
-import { useWindowSize } from "react-use";
-import Button from "../Button";
-import TextCard from "../TextCard";
+import HowWeWork from "../../Reusable/HowWeWork";
 import Style from "./index.module.css";
+import Item from "./Item";
 
-export default function WhyWe() {
-  const { width } = useWindowSize();
+const data = [
+  {
+    title: "Erfahrene Entwickler",
+    description: `Unser exzellentes Team aus Software Entwicklern, Programmierern und
+    Ingenieuren verfügt über langjährige Erfahrung in der Entwicklung von
+    Websites.`,
+  },
+  {
+    title: "Kompetente Beratung",
+    description: `Unser Entwicklungsteam arbeitet eng mit Dir zusammen, um die beste Vorgehensweise bei der Erstellung Deiner Software zu ermitteln. Wir planen die Anforderungen und erstellen einen detaillierten Dokument-/Projektplan, der den Entwicklungsprozess für Dich verständlich erklärt und begleitet.`,
+  },
+  {
+    title: "Transparenz",
+    description: `Unser Entwicklungsteam und unsere Projektmanager senden Dir regelmäßige Updates, um Dich während der gesamten Projektentwicklungsphase auf dem Laufenden zu halten. 
+    Kontaktiere uns per Kontaktformular, Telefon, Chat oder E-Mail, damit wir auf Deine Anliegen eingehen und Deine Fragen beantworten können.`,
+  },
+];
+
+export default function FirstSection() {
   return (
-    <React.Fragment>
-      <div className={Style.row}>
-        <TextCard
-          title="Erzählen Sie uns von Ihren Bedürfnissen"
-          description="Per E-Mail, vor Ort, dem Telefon, durch Kontaktaufnahme mit dem Formular oder per Chat kannst du uns mitteilen, was Deine Anforderugen für das System sind."
-        />
-        <TextCard
-          title="Wir tauschen uns aus"
-          description="Nach Eingang der Informationen treffen wir uns persönlich oder virtuell, um mögliche Lösungen zu besprechen und weitere Details zu klären."
-        />
-        <TextCard
-          title="Wir entwickeln Deine Idee"
-          description="Sobald alles klar ist, beginnen wir mit der Entwicklung und Lieferung gemäß den festgelegten Fristen."
-        />
-      </div>
-
-      <div className={Style.buttonContainer}>
-        <Button title="Über uns" />
-        <Button
-          style={{ marginTop: width <= 450 ? "5rem" : 0 }}
-          title="Kostenlos beraten lassen"
-        />
-      </div>
-    </React.Fragment>
+    <div className={Style.container}>
+      {data.map((item, index) => {
+        return (
+          <React.Fragment key={index}>
+            <Item {...item} />
+          </React.Fragment>
+        );
+      })}
+      <HowWeWork />
+    </div>
   );
 }
