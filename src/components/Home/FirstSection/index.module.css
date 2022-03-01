@@ -1,8 +1,8 @@
 .firstSectionContainer {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90rem;
   background-color: var(--tertiary-background);
-  padding: 7% 0% 0% 5%;
+  padding: 5% 0% 0% 5%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -12,8 +12,8 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
-  font-size: 65px;
-  line-height: 80px;
+  font-size: 6.5rem;
+  line-height: 8rem;
   text-transform: uppercase;
   color: var(--primary-color);
   display: flex;
@@ -24,27 +24,28 @@
   padding-bottom: 5%;
 }
 
-.firstSectionContainer .right {
+.right {
   flex: 1;
   position: relative;
+  overflow: visible;
 }
 .mainParagraph {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
-.firstSectionContainer img {
+.right img {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: 0;
-  right: -30px;
-  object-fit: contain;
+  bottom: 0px;
+  right: -5rem;
+  object-fit: fill;
 }
 
 .bubble {
@@ -53,10 +54,11 @@
 
 @keyframes bubbleAnimation {
   from {
-    right: -500px;
+    right: -50rem;
   }
   to {
-    right: -30px;
+    /* right: -3rem; */
+    right: -5rem;
   }
 }
 
@@ -66,22 +68,21 @@
     padding: 7% 0% 0% 2.5%;
   }
   .mainHeading {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 5rem;
+    line-height: 6rem;
     width: 80%;
   }
 
   .mainParagraph {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
     width: 62%;
   }
 
-
-  .firstSectionContainer img {
-    width: 500px;
-    height: 382px;
-    right: -120px;
+  .right img {
+    width: 50rem;
+    height: 38.2rem;
+    right: -5rem;
   }
 
   .bubble {
@@ -90,10 +91,10 @@
 
   @keyframes bubbleAnimationMobile {
     from {
-      right: -500px;
+      right: -50rem;
     }
     to {
-      right: -100px;
+      right: -5rem;
     }
   }
 }
@@ -102,25 +103,24 @@
   .firstSectionContainer {
     flex-direction: column;
     padding: 7% 2% 0% 2.5%;
-    min-height: 126vh;
   }
   .mainHeading {
     width: 95%;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 3.6rem;
+    line-height: 4rem;
   }
 
+  .left{
+    height: 40rem;
+  }
   .mainParagraph {
     width: 100%;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 
-
-  .firstSectionContainer img {
-    /* width: 450px;
-    height: 262px; */
-    right: -100px;
+  .right img {
+    right: -5rem;
   }
 
   .bubble {
@@ -129,10 +129,10 @@
 
   @keyframes bubbleAnimationMobile {
     from {
-      right: -450px;
+      right: -45rem;
     }
     to {
-      right: -100px;
+      right: -5rem;
     }
   }
 }

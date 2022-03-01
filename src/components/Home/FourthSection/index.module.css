@@ -1,7 +1,7 @@
 .fourthSectionContainer {
   width: 100%;
-  min-height: 100vh;
-  background: var(--background);
+  min-height: 90rem;
+  background-color: var(--background);
   padding: 5%;
 }
 
@@ -9,16 +9,16 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 2.8rem;
+  line-height: 4rem;
   color: #f4f4f2;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .row {
-  margin-top: 100px;
+  margin-top: 10rem;
   width: 100%;
-  min-height: 50vh;
+  min-height: 45rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 
 @media screen and (max-width: 834px) {
@@ -36,22 +36,22 @@
     padding: 2.5%;
   }
   .mainParagraph {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 2.4rem;
+    line-height: 4rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .mainParagraph {
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
   }
 
   .row {
     flex-direction: column;
   }
-  .row div{
-    margin-top: 50px;
+  .row div {
+    margin-top: 5rem;
   }
   .buttonContainer {
     flex-direction: column;

@@ -27,7 +27,7 @@ export default function FourthSection() {
         Transformation erfolgreich begleitet.
       </p>
 
-      <Button style={{ marginTop: 50 }} title="Kostenlos beraten lassen" />
+      <Button style={{ marginTop: "5rem" }} title="Kostenlos beraten lassen" />
 
       <div className={Style.row}>
         <TextCard
@@ -46,7 +46,7 @@ export default function FourthSection() {
 
       <div className={Style.buttonContainer}>
         <Button title="Über uns" />
-        <Button  style={{ marginTop: width <= 400 ? 50 : 0 }} title="Kostenlos beraten lassen" />
+        <Button  style={{ marginTop: width <= 450 ? "5rem" : 0 }} title="Kostenlos beraten lassen" />
       </div>
     </div>
   );

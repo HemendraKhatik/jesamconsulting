@@ -4,9 +4,9 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
-  font-size: 30px;
-  line-height: 65px;
-  padding: 10px 30px;
+  font-size: 3rem;
+  line-height: 6.5rem;
+  padding: 1rem 3rem;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -14,14 +14,14 @@
 
 @media screen and (max-width: 834px) {
   .cta {
-    font-size: 20px;
-    padding: 0px 30px;
+    font-size: 2rem;
+    padding: 0px 3rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .cta {
-    font-size: 16px;
-    padding: 0px 30px;
+    font-size: 1.6rem;
+    padding: 0px 3rem;
   }
 }

@@ -16,15 +16,15 @@ export default function SecondSection() {
       </h1>
 
       <Button
-        style={{ marginTop: width <= 450 ? 20 : 50 }}
+        style={{ marginTop: width <= 450 ? "2rem" : "5rem" }}
         title="APP-Entwicklung"
       />
       <Button
-        style={{ marginTop: width <= 450 ? 20 : 50 }}
+        style={{ marginTop: width <= 450 ? "2rem" : "5rem" }}
         title="Software-Entwicklung"
       />
       <Button
-        style={{ marginTop: width <= 450 ? 20 : 50 }}
+        style={{ marginTop: width <= 450 ? "2rem" : "5rem" }}
         title="WEB-ENTWICKLUNG"
       />
     </div>

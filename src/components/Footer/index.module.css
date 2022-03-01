@@ -1,6 +1,6 @@
 .footerContainer {
   width: 100%;
-  min-height: 50vh;
+  min-height: 45rem;
   padding: 5% 5% 4% 5%;
   background-color: var(--background);
 }
@@ -27,22 +27,22 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: #f4f4f2;
-  margin-top: 22px;
+  margin-top: 2.2rem;
 }
 
 .innnerContainer .left p {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 140%;
   color: #f4f4f2;
 }
 
-.mobileNav{
+.mobileNav {
   display: none;
 }
 .nav {
@@ -58,10 +58,10 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: #f4f4f2;
-  margin: 10px 0px;
+  margin: 1rem 0px;
   cursor: pointer;
 }
 
@@ -72,78 +72,78 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 .contactItem img {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
 .contactItem h1 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 1.8rem;
+  line-height: 4rem;
   color: #f4f4f2;
-  margin-left: 22px;
+  margin-left: 2.2rem;
 }
 
 .contactItem h2 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 3rem;
+  line-height: 3.7rem;
   text-transform: uppercase;
   color: var(--primary-color);
-  margin-left: 22px;
+  margin-left: 2.2rem;
 }
 
 .copywrite {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   color: #f4f4f2;
-  margin-top: 80px;
+  margin-top: 8rem;
 }
 
 @media screen and (max-width: 834px) {
   .nav ul li {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 
   .innnerContainer .left h1 {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   .innnerContainer .left p {
-    font-size: 13px;
+    font-size: 1.3rem;
   }
 
   .contactItem {
-    margin-top: 15px;
+    margin-top: 1.5rem;
   }
 
   .contactItem h1 {
-    font-size: 11px;
-    line-height: 40px;
+    font-size: 1.1rem;
+    line-height: 4rem;
   }
   .contactItem h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2.4rem;
   }
 
   .contactItem img {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
   }
   .copywrite {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -160,7 +160,7 @@
     display: none;
   }
 
-  .mobileNav{
+  .mobileNav {
     display: block;
     flex: 1;
     padding: 5%;
