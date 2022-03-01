@@ -1,5 +1,4 @@
 import React from "react";
-import WhyWe from "../components/Reusable/WhyWe";
 import FirstSection from "../components/Website/FirstSection";
 import HeroSection from "../components/Website/HeroSection";
 import Base from "./Base";
