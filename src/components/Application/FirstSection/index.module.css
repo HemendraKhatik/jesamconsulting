@@ -23,3 +23,41 @@
   color: #000000;
   margin-top: 3rem;
 }
+
+.note {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 834px) {
+  .mainHeading {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  .mainParagraph {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+  .note {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mainHeading {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .mainParagraph {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  .note {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}

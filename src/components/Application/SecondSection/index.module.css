@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   min-height: 90vh;
-  padding: 4% 8%;
+  padding: 4% 10%;
   background-color: #70aabc;
 }
 
@@ -53,4 +53,47 @@
   border-bottom: 0.3rem solid #000000;
   padding-bottom: 2rem;
   margin-top: 2rem;
+}
+
+@media screen and (max-width: 834px) {
+  .mainHeading {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+  .summary {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+  .mainParagraph {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+  .note {
+    font-size: 2.4rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mainHeading {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    padding-bottom: 2rem;
+  }
+  .summary {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .details {
+    margin-top: 1rem;
+  }
+
+  .mainParagraph {
+    font-size: 2.4rem;
+    line-height: 4rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
 }

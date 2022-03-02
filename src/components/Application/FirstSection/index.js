@@ -11,7 +11,8 @@ export default function FirstSection() {
         besitzen eine große Erfahrung in diesem Bereich. Setzen Sie sich jetzt
         mit unseren Spezialisten in Verbindung. Gerne beraten wir Sie umfassend
         zu allen Themen rund um die App- und Softwareentwicklung.
-        <br /><br />
+        <br />
+        <br />
         Bei mobilen Applikationen, auch „Apps“ genannt, handelt es sich um
         Anwendungssoftware für mobile Endgeräte wie Smartphones oder Tablets.
         Allgemein werden Apps in drei Kategorien eingeteilt: Native Apps,
@@ -23,6 +24,7 @@ export default function FirstSection() {
         Programmierung und bieten dementsprechend je nach Anwendungsfall viele
         Vorteile.
       </h1>
+      <h2 className={Style.note}>Wir beraten und klären Sie diesbezüglich gerne auf.</h2>
     </div>
   );
 }
