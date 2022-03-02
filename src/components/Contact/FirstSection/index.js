@@ -39,8 +39,8 @@ export default function FirstSection() {
               name="option"
               value="App-Entwicklung"
             />
-            <span class={Style.checkmark}></span> 
-            <label for="App-Entwicklung">App-Entwicklung</label>
+            <span className={Style.checkmark}></span> 
+            <label htmlFor="App-Entwicklung">App-Entwicklung</label>
           </div>
           <div className={Style.radioInputField}>
             <input
@@ -49,8 +49,8 @@ export default function FirstSection() {
               name="option"
               value="Web-Entwicklung"
             />
-            <span class={Style.checkmark}></span> 
-            <label for="Web-Entwicklung">Web-Entwicklung</label>
+            <span className={Style.checkmark}></span> 
+            <label htmlFor="Web-Entwicklung">Web-Entwicklung</label>
           </div>
 
           <div className={Style.radioInputField}>
@@ -60,8 +60,8 @@ export default function FirstSection() {
               name="option"
               value="Software-Entwicklung"
             />
-            <span class={Style.checkmark}></span> {" "}
-            <label for="Software-Entwicklung">Software-Entwicklung</label>
+            <span className={Style.checkmark}></span> {" "}
+            <label htmlFor="Software-Entwicklung">Software-Entwicklung</label>
           </div>
           <div className={Style.radioInputField}>
             <input
@@ -70,8 +70,8 @@ export default function FirstSection() {
               name="option"
               value="KI-Entwicklung"
             />
-            <span class={Style.checkmark}></span> {" "}
-            <label for="App-Entwicklung">KI-Entwicklung</label>
+            <span className={Style.checkmark}></span> {" "}
+            <label htmlFor="App-Entwicklung">KI-Entwicklung</label>
           </div>
           <div className={Style.radioInputField}>
             <input
@@ -80,8 +80,8 @@ export default function FirstSection() {
               name="option"
               value="KI-Entwicklung"
             />
-            <span class={Style.checkmark}></span> 
-            <label for="App-Entwicklung">Consulting</label>
+            <span className={Style.checkmark}></span> 
+            <label htmlFor="App-Entwicklung">Consulting</label>
           </div>
         </div>
       </div>
