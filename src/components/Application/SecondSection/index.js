@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./index.module.css";
+import WhyWe from "../../Reusable/WhyWe";
 
 const data = [
   {
@@ -20,16 +21,21 @@ const data = [
 ];
 export default function SecondSection() {
   return (
-    <div className={Style.container}>
-      <h1 className={Style.mainHeading}>Unsere Apps sind…</h1>
-      {data.map((item, index) => {
-        return (
-          <details open key={index} className={Style.details}>
-            <summary className={Style.summary}>{item.title}</summary>
-            <h1 className={Style.mainParagraph}>{item.description}</h1>
-          </details>
-        );
-      })}
-    </div>
+    <>
+      <div className={Style.container}>
+        <h1 className={Style.mainHeading}>Unsere Apps sind…</h1>
+        {data.map((item, index) => {
+          return (
+            <details open key={index} className={Style.details}>
+              <summary className={Style.summary}>{item.title}</summary>
+              <h1 className={Style.mainParagraph}>{item.description}</h1>
+            </details>
+          );
+        })}
+      </div>
+      <div className={Style.secondContainer}>
+        <WhyWe />
+      </div>
+    </>
   );
 }

@@ -1,10 +1,15 @@
 .container {
   width: 100%;
   min-height: 90vh;
-  padding: 4% 10%;
+  padding: 4% 8%;
   background-color: #70aabc;
 }
 
+.secondContainer {
+  width: 100%;
+  padding: 4% 8%;
+  background-color: var(--background);
+}
 .mainHeading {
   font-family: Montserrat;
   font-style: normal;
@@ -91,9 +96,8 @@
   }
 
   .mainParagraph {
-    font-size: 2.4rem;
-    line-height: 4rem;
     font-size: 1.3rem;
     line-height: 1.7rem;
+    padding-top: 1rem;
   }
 }

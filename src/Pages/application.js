@@ -14,7 +14,6 @@ export default function Application() {
       >
         <FirstSection />
         <SecondSection />
-        <WhyWe />
       </Base>
     </React.Fragment>
   );
