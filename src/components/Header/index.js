@@ -42,9 +42,11 @@ export default function Header({ background, color, isDarkLogo }) {
               SOFTWARE
             </li>
           </Link>
-          <li style={{ color: color ? color : "var(--primary-color)" }}>
-            KONTAKT
-          </li>
+          <Link to="/contact">
+            <li style={{ color: color ? color : "var(--primary-color)" }}>
+              KONTAKT
+            </li>
+          </Link>
         </ul>
       </nav>
 

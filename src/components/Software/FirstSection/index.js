@@ -1,6 +1,5 @@
 import React from "react";
 import Style from "./index.module.css";
-import HowWeWork from "../../Reusable/HowWeWork";
 import WhyWe from "../../Reusable/WhyWe";
 
 export default function FirstSection() {

@@ -5,18 +5,28 @@ import PhoneIcon from "../../assets/icons/phone.svg";
 import EmailIcon from "../../assets/icons/email.svg";
 import FacebookIcon from "../../assets/icons/facebook.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className={Style.footerContainer} >
+    <footer className={Style.footerContainer}>
       <div className={Style.innnerContainer}>
-      <div className={Style.mobileNav}>
+        <div className={Style.mobileNav}>
           <nav className={Style.nav}>
             <ul>
-              <li>WEBSITE</li>
-              <li>APPLIKATION</li>
-              <li>SOFTWARE</li>
-              <li>KONTAKT</li>
+              <Link to="/website">
+                <li>WEBSITE</li>
+              </Link>
+              <Link to="/application">
+                <li>APPLIKATION</li>
+              </Link>
+
+              <Link to="/software">
+                <li>SOFTWARE</li>
+              </Link>
+              <Link to="/contact">
+                <li>KONTAKT</li>
+              </Link>
             </ul>
           </nav>
         </div>
@@ -31,10 +41,18 @@ export default function Footer() {
         <div className={Style.center}>
           <nav className={Style.nav}>
             <ul>
-              <li>WEBSITE</li>
-              <li>APPLIKATION</li>
-              <li>SOFTWARE</li>
-              <li>KONTAKT</li>
+              <Link to="/website">
+                <li>WEBSITE</li>
+              </Link>
+              <Link to="/application">
+                <li>APPLIKATION</li>
+              </Link>
+              <Link to="/software">
+                <li>SOFTWARE</li>
+              </Link>
+              <Link to="/contact">
+                <li>KONTAKT</li>
+              </Link>
             </ul>
           </nav>
         </div>
@@ -58,7 +76,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className={Style.copywrite}>Copyright © 2021 JESAM. Alle Rechte vorbehalten.</p>
+      <p className={Style.copywrite}>
+        Copyright © 2021 JESAM. Alle Rechte vorbehalten.
+      </p>
     </footer>
   );
 }
