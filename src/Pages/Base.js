@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 export default function Base({
   children,
@@ -8,6 +9,9 @@ export default function Base({
   headerTextColor,
   isDarkLogo,
 }) {
+  
+  const constraintsRef = useRef(null);
+
   return (
     <React.Fragment>
       <Header
@@ -15,6 +19,10 @@ export default function Base({
         color={headerTextColor}
         isDarkLogo={isDarkLogo}
       />
+      <div className="bubble-container" >
+        <motion.div className="drag-area" ref={constraintsRef}></motion.div>
+        <motion.div drag dragConstraints={constraintsRef}></motion.div>
+      </div>
       {children}
       <Footer />
     </React.Fragment>
