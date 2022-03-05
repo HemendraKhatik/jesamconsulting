@@ -86,7 +86,7 @@ export default function Base({
       </div>
       <motion.div
         style={{ width: "100%", height: "fit-content" }}
-        drag={true}
+        drag={false}
         ref={constraintsRef}
       >
         {children}
