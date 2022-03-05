@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -39,31 +40,36 @@ a {
   height: 0px;
 }
 
+canvas {
+  border: 1px soild black;
+}
 
 .bubble-container {
   background-color: transparent;
   width: 100%;
-  z-index: 1;
-  /* position:fixed;
-  top: 0;
-  left: 0; */
-
 }
 .bubble-container div {
   background-color: transparent;
   border: 2px solid #cacaca;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  top: 0;
+  top: 40%;
   border-radius: 50% 41% 48% 52%;
-  left: 0;
-  animation: bubbleAnimation 4s infinite;
-  cursor: pointer;
+  left: 40%;
+  animation: bubbleAnimation 4s infinite, grow 2s;
+  /* cursor: pointer; */
   z-index: 234;
 }
 
-
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 @keyframes bubbleAnimation {
   0% {
     border-radius: 50% 41% 48% 52%;
