@@ -51,8 +51,8 @@ export default function Base({
           };
         } else {
           return {
-            width: prev.width - 1,
-            height: prev.height - 1,
+            width: prev.width - 2.5,
+            height: prev.height - 2.5,
           };
         }
       });
