@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  min-height: 50vh;
+  padding: 5% 8%;
+  background-color: var(--background);
+}
+
+.mainHeading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 8rem;
+  text-transform: uppercase;
+  color: #ccff00;
+}
+
+.mainParagraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: #f4f4f2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.logos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  columns: 4;
+}
+
+.logo {
+  min-width: 20rem;
+  min-height: 20rem;
+  margin: 2rem;
+  background-color: orange;
+}
+
+.logo img {
+  object-fit: cover;
+}

@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useWindowSize } from "react-use";
 import Button from "../Button";
 import TextCard from "../TextCard";
 import Style from "./index.module.css";
 
 export default function HowWeWork() {
+  const [size, setSize] = useState(0);
   const { width } = useWindowSize();
+  useEffect(() => {
+    setSize(width);
+  }, [width]);
+
   return (
     <React.Fragment>
       <div className={Style.row}>
@@ -26,7 +31,7 @@ export default function HowWeWork() {
       <div className={Style.buttonContainer}>
         <Button title="Über uns" />
         <Button
-          style={{ marginTop: width <= 450 ? "5rem" : 0 }}
+          style={{ marginTop: size <= 450 ? "5rem" : 0 }}
           title="Kostenlos beraten lassen"
         />
       </div>
