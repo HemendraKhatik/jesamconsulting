@@ -10,6 +10,7 @@ export default function Application() {
         headerBackground={"#CEA5AD"}
         headerTextColor={"var(--primary-text-color)"}
         isDarkLogo={true}
+        yOffset={3500}
       >
         <FirstSection />
         <SecondSection />

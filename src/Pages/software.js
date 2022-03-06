@@ -10,6 +10,7 @@ export default function Software() {
         headerBackground={"var(--tertiary-background)"}
         headerTextColor={"var(--primary-color)"}
         isDarkLogo={false}
+        yOffset={3000}
       >
         <HeroSection />
         <FirstSection/>

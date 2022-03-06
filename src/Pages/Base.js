@@ -10,8 +10,10 @@ export default function Base({
   headerBackground,
   headerTextColor,
   isDarkLogo,
+  yOffset
 }) {
   const constraintsRef = useRef(null);
+  const bubble = useRef(null);
 
   const [margin, setMargin] = useState(0);
   const [directionY, setDirectionY] = useState(0);
@@ -23,7 +25,14 @@ export default function Base({
   const scrollRef = useRef(null);
   const isScrolled = useWindowScroll(scrollRef);
   useEffect(() => {
-    if (isScrolled.y > 4000) {
+    
+    // setDimensions({
+    //   width: `${bubble.current.style.width}`,
+    //   height: `${bubble.current.style.height}`,
+    // });
+
+    console.log(isScrolled.y);
+    if (isScrolled.y > yOffset) {
       // Do nothing
     } else {
       setMargin(isScrolled.y);
@@ -62,8 +71,6 @@ export default function Base({
 
   const dragControls = useDragControls();
 
-
-
   return (
     <React.Fragment>
       <Header
@@ -82,6 +89,7 @@ export default function Base({
           drag={true}
           dragConstraints={constraintsRef}
           dragControls={dragControls}
+          ref={bubble}
         ></motion.div>
       </div>
       <motion.div

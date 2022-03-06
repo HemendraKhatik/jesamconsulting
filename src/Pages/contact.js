@@ -9,6 +9,8 @@ export default function Contact() {
         headerBackground={"var(--primary-background)"}
         headerTextColor={"var(--primary-text-color)"}
         isDarkLogo={true}
+        yOffset={1500}
+
       >
         <FirstSection />
       </Base>

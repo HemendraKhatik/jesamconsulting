@@ -10,6 +10,7 @@ export default function website() {
         headerBackground={"var(--primary-background)"}
         headerTextColor={"var(--primary-text-color)"}
         isDarkLogo={true}
+        yOffset={2000}
       >
         <HeroSection />
         <FirstSection />

@@ -58,9 +58,11 @@ canvas {
   border-radius: 50% 41% 48% 52%;
   left: 40%;
   animation: bubbleAnimation 4s infinite, grow 2s;
-  /* cursor: pointer; */
+  cursor: pointer;
   z-index: 234;
 }
+
+
 
 @keyframes grow {
   from {
