@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useWindowSize } from "react-use";
 import Button from "../Button";
 import TextCard from "../TextCard";
@@ -10,7 +11,10 @@ export default function HowWeWork() {
   useEffect(() => {
     setSize(width);
   }, [width]);
-
+  const navigate = useNavigate();
+  const redirectToAboutPage = () => {
+    navigate("/about");
+  };
   return (
     <React.Fragment>
       <div className={Style.row}>
@@ -29,7 +33,7 @@ export default function HowWeWork() {
       </div>
 
       <div className={Style.buttonContainer}>
-        <Button title="Über uns" />
+        <Button action={redirectToAboutPage} title="Über uns" />
         <Button
           style={{ marginTop: size <= 450 ? "5rem" : 0 }}
           title="Kostenlos beraten lassen"

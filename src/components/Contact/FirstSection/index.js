@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Reusable/Button";
 import Style from "./index.module.css";
 
 export default function FirstSection() {
+  const navigate = useNavigate();
+  const redirectToAboutPage = () => {
+    navigate("/about");
+  };
   return (
     <div className={Style.container}>
       <div className={Style.upperContainer}>
@@ -93,6 +98,7 @@ export default function FirstSection() {
               color: "var(--primary-color)",
             }}
             title="Über uns"
+            action={redirectToAboutPage}
           />
         </div>
         <div className={Style.btn}>

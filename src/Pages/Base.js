@@ -2,8 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { motion, useDragControls } from "framer-motion";
-import { useWindowScroll } from "react-use";
-// import test from "./explosion";
+import { useWindowScroll, useWindowSize } from "react-use";
 
 export default function Base({
   children,
@@ -13,6 +12,7 @@ export default function Base({
   yOffset,
   showBubble,
 }) {
+  const { width } = useWindowSize();
   const constraintsRef = useRef(null);
   const bubble = useRef(null);
 
@@ -27,6 +27,7 @@ export default function Base({
   const scrollRef = useRef(null);
   const isScrolled = useWindowScroll(scrollRef);
 
+  // FIXME: need reduce bubble size for mobile
   useEffect(() => {
     if (showBubble) {
       if (isScrolled.y > yOffset) {
@@ -65,10 +66,24 @@ export default function Base({
       }
       setDirectionY(isScrolled.y);
     }
+
+    try {
+      bubble.current.style.left = `0%`;
+    } catch {
+      // do nothing
+    }
   }, [isScrolled, directionY, yOffset, showBubble]);
 
   const dragControls = useDragControls();
 
+  useEffect(() => {
+    if (width <= 500) {
+      setDimensions({
+        width: 150,
+        height: 150,
+      });
+    }
+  }, [width]);
   return (
     <React.Fragment>
       <Header
@@ -87,15 +102,20 @@ export default function Base({
             }}
             drag={true}
             dragConstraints={constraintsRef}
-            dragControls={dragControls}
             ref={bubble}
           ></motion.div>
         </div>
       )}
       <motion.div
-        style={{ width: "100%", height: "fit-content", paddingTop: "12vh" }}
+        style={{
+          width: "100%",
+          height: "fit-content",
+          paddingTop: "10vh",
+          overflow: "hidden !important",
+        }}
         drag={false}
         ref={constraintsRef}
+        dragControls={dragControls}
       >
         {children}
       </motion.div>

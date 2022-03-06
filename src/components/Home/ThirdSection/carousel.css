@@ -1,0 +1,34 @@
+#home-carousel{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  /* background-color: blue; */
+}
+#home-carousel .carousel {
+  padding-bottom: 4.8rem;
+  /* background-color: red; */
+}
+#home-carousel .carousel .control-dots {
+  text-align: left !important;
+  padding: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 2%;
+  z-index: 2;
+}
+#home-carousel .carousel .control-dots .dot {
+  width: 9% !important;
+  height: 0.7rem !important;
+  border-radius: 3.5px !important;
+  background-color: var(--background) !important;
+}
+
+#home-carousel .carousel .slide {
+  text-align: left !important;
+}
+
+@media screen and (max-width: 540px) {
+  /* #home-carousel .carousel .control-dots {
+   
+  } */
+}
