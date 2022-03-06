@@ -1,48 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Style from "./index.module.css";
 import WhyWe from "../../Reusable/WhyWe";
+import { useWindowSize } from "react-use";
+import TabletCarousel from "./TabletCarousel";
+import DesktopCarousel from "./DesktopCarousel";
+import MobileCarousel from "./MobileCarousel";
 
 export default function FirstSection() {
+  const [size, setSize] = useState(0);
+  const { width } = useWindowSize();
+
+  useEffect(() => {
+    setSize(width);
+  }, [width]);
+
   return (
-    <div className={Style.container}>
-      <div className={Style.row}>
-        <div>
-          <h1>Webbasierte maßgeschneiderte Lösungen</h1>
-          <h2>
-            Wir sind nicht nur darauf spezialisiert, die beste technische Lösung
-            bereitzustellen, sondern diese Lösung auch kreativ zu verbessern,
-            indem wir die professionelle Anwendung präzise auf die Anforderungen
-            Ihres Unternehmens zuschneiden.
-          </h2>
+    <div id="software-carousel" className={Style.container}>
+      {size <= 900 ? (
+        size <= 500 ? (
+          <MobileCarousel />
+        ) : (
+          <TabletCarousel />
+        )
+      ) : (
+        <DesktopCarousel />
+      )}
 
-          <p className={Style.readMore}>Mehr erfahren</p>
-        </div>
-
-        <div>
-          <h1>Entwicklung von B2B, B2E und B2C Anwendungen</h1>
-          <h2>
-            Die Anforderungen an die Individualsoftwareentwicklung sind ganz
-            unterschiedlich – je nachdem, ob die Anwendungen für
-            Geschäftspartner, Ihre eignen Mitarbeiter oder private
-            Endverbraucher bestimmt sind.
-          </h2>
-
-          <p className={Style.readMore}>Mehr erfahren</p>
-        </div>
-
-        <div>
-          <h1>Agile Methoden</h1>
-          <h2>
-            Bei 28Apps setzen wir bei der individuellen Softwareentwicklung
-            stets auf agile Methoden. Wir sind überzeugt davon, dass wir auf
-            diese Weise die Kundenwünsche besonders gut erfüllen und die
-            Projekte schnell umsetzen können.
-          </h2>
-
-          <p className={Style.readMore}>Mehr erfahren</p>
-        </div>
-      </div>
-
+      {/*  */}
       <div className={Style.innerContainer}>
         <WhyWe />
       </div>

@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
   .firstSectionContainer {
     flex-direction: column;
     padding: 7% 0% 0% 2.5%;
@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .firstSectionContainer {
     flex-direction: column;
     padding: 7% 2% 0% 2.5%;

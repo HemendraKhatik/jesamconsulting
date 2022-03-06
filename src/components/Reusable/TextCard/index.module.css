@@ -23,7 +23,7 @@
   color: #f4f4f2;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
   .textCardContainer {
     width: 200px;
   }

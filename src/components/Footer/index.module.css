@@ -114,7 +114,7 @@
   margin-top: 8rem;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
   .nav ul li {
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -151,7 +151,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .innnerContainer {
     flex-direction: column;
   }

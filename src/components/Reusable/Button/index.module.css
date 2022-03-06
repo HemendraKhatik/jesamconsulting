@@ -15,14 +15,14 @@
   opacity: 0.8;
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
   .cta {
     font-size: 2rem;
     padding: 0px 3rem;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .cta {
     font-size: 1.6rem;
     padding: 0px 3rem;

@@ -9,7 +9,7 @@ import Base from "./Base";
 export default function index() {
   return (
     <React.Fragment>
-      <Base yOffset={4500}>
+      <Base showBubble={true} yOffset={4500}>
         <HeroSection />
         <FirstSection />
         <SecondSection />

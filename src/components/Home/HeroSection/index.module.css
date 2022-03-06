@@ -40,7 +40,7 @@
   color: var(--primary-color);
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
   .container {
     min-height: 90rem;
     padding: 20rem 10% 5% 5%;
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .container {
     min-height: 90vh;
     padding: 12rem 5% 1% 5%; 

@@ -3,7 +3,7 @@ import Website from "./Pages/website";
 import Application from "./Pages/application";
 import Software from "./Pages/software";
 import Contact from "./Pages/contact";
-
+import About from "./Pages/about";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,6 +15,7 @@ function App() {
         <Route path="/application" element={<Application />} />
         <Route path="/software" element={<Software />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>
   );

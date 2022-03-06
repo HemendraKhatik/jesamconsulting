@@ -48,7 +48,7 @@
   transform: rotate(-16deg);
 }
 
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 900px) {
   .thirdSectionContainer {
     min-height: 75rem;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 540px) {
   .thirdSectionContainer {
     min-height: 60rem;
   }
