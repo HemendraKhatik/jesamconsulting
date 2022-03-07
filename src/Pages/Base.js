@@ -127,12 +127,13 @@ export default function Base({
       </motion.div> */}
 
       <div
-        style={{
-          width: "100%",
-          height: "fit-content",
-          paddingTop: "10vh",
-          overflow: "hidden !important",
-        }}
+        // style={{
+        //   width: "100%",
+        //   height: "fit-content",
+        //   paddingTop: "10vh",
+        //   overflow: "hidden !important",
+        // }}
+        className="parent-container"
       >
         {children}
       </div>

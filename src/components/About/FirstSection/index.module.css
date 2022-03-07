@@ -60,8 +60,7 @@
 @media screen and (max-width: 500px) {
   .logos {
     padding: 0 6%;
-  justify-content:center;
-
+    justify-content: center;
   }
   .logo {
     width: 80%;

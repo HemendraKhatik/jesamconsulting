@@ -1,6 +1,6 @@
 .thirdSectionContainer {
   width: 100%;
-  min-height: 100rem;
+  min-height: 105rem;
   background: #cea5ad;
   padding: 5%;
   position: relative;
@@ -36,9 +36,9 @@
 
 .sound {
   position: absolute;
-  top: 13%;
-  right: 1%;
-  transform: rotate(5deg);
+  top: 16%;
+  right: -5%;
+  transform: rotate(-2deg);
 }
 
 .mobileSoundSvg {
@@ -65,6 +65,8 @@
 
   .mobileSoundSvg {
     display: block;
+    top: 23%;
+    transform: rotate(-10deg);
   }
   .sound {
     display: none;
@@ -82,11 +84,16 @@
 
   .companies {
     margin-top: 3.6rem;
-    /* height: 10vh; */
   }
 
   .mobileSoundSvg {
-    top: 25%;
-    transform: rotate(5deg);
+    top: 30%;
+    transform: rotate(-2deg);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .companies {
+    height: 10vh;
   }
 }

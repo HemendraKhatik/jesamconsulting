@@ -46,9 +46,8 @@
   opacity: 0.6;
 }
 .mobileNav {
-  /* display: none; */
   position: fixed;
-  top: 10vh;
+  top: 8vh;
   right: 5%;
   width: 80%;
   height: 300px;

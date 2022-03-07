@@ -21,7 +21,7 @@ export default function DesktopCarousel() {
   const [imageThree, setImageThree] = useState(D3);
 
   useEffect(() => {
-    if (width <= 834) {
+    if (width > 450 && width < 900) {
       setImageOne(T1);
       setImageTwo(T2);
       setImageThree(T3);

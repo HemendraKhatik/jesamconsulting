@@ -30,6 +30,13 @@ code {
   box-sizing: border-box;
 }
 
+.parent-container {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  padding-top: 12vh;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -99,6 +106,14 @@ canvas {
   }
 }
 
+
+@media screen and (max-width: 950px) {
+
+  .parent-container {
+    padding-top: 10vh;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .bubble-container div {
     width: 150px;
@@ -106,4 +121,22 @@ canvas {
     left: calc(40% - 150px);
     top: 20%;
   }
+  .parent-container {
+    padding-top: 12vh;
+  }
 }
+
+@media screen and (max-width: 414px) {
+  .parent-container {
+    padding-top: 10vh;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .parent-container {
+    padding-top: 12vh;
+  }
+}
+
+
