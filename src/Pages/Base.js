@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { BrowserTypes } from "react-device-detect";
+
 // import { motion, useDragControls } from "framer-motion";
 // import { useWindowScroll, useWindowSize } from "react-use";
 
@@ -127,12 +129,7 @@ export default function Base({
       </motion.div> */}
 
       <div
-        // style={{
-        //   width: "100%",
-        //   height: "fit-content",
-        //   paddingTop: "10vh",
-        //   overflow: "hidden !important",
-        // }}
+        style={{ paddingTop: BrowserTypes.Safari ? "10vh" : "12vh" }}
         className="parent-container"
       >
         {children}

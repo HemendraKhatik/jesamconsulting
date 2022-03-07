@@ -35,6 +35,7 @@ code {
   height: fit-content;
   overflow: hidden;
   padding-top: 12vh;
+  -webkit-padding-top: 12vh;
 }
 
 a {
@@ -106,11 +107,10 @@ canvas {
   }
 }
 
-
 @media screen and (max-width: 950px) {
-
   .parent-container {
     padding-top: 10vh;
+    -webkit-padding-top: 10vh;
   }
 }
 
@@ -123,20 +123,20 @@ canvas {
   }
   .parent-container {
     padding-top: 12vh;
+    -webkit-padding-top: 12vh;
   }
 }
 
 @media screen and (max-width: 414px) {
   .parent-container {
     padding-top: 10vh;
+    -webkit-padding-top: 10vh;
   }
 }
-
 
 @media screen and (max-width: 375px) {
   .parent-container {
     padding-top: 12vh;
+    -webkit-padding-top: 12vh;
   }
 }
-
-
