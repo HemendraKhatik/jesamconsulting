@@ -36,12 +36,34 @@
 }
 
 .logo {
-  min-width: 20rem;
-  min-height: 20rem;
+  width: 20%;
+  /* min-width: 20rem; */
+  /* min-height: 20rem; */
   margin: 2rem;
-  background-color: orange;
+  border-radius: 0.5rem;
 }
 
 .logo img {
   object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .logos {
+    padding: 0 6%;
+  }
+  .logo {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logos {
+    padding: 0 6%;
+  justify-content:center;
+
+  }
+  .logo {
+    width: 80%;
+  }
 }

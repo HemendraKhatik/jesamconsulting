@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { motion, useDragControls } from "framer-motion";
-import { useWindowScroll, useWindowSize } from "react-use";
+// import { motion, useDragControls } from "framer-motion";
+// import { useWindowScroll, useWindowSize } from "react-use";
 
 export default function Base({
   children,
@@ -12,78 +12,84 @@ export default function Base({
   yOffset,
   showBubble,
 }) {
-  const { width } = useWindowSize();
-  const constraintsRef = useRef(null);
-  const bubble = useRef(null);
+  // const { width } = useWindowSize();
+  // const constraintsRef = useRef(null);
+  // const bubble = useRef(null);
 
-  const [margin, setMargin] = useState(0);
-  const [directionY, setDirectionY] = useState(0);
+  // const [margin, setMargin] = useState(0);
+  // const [directionY, setDirectionY] = useState(0);
 
-  const [dimensions, setDimensions] = useState({
-    width: 250,
-    height: 250,
-  });
+  // const [dimensions, setDimensions] = useState({
+  //   width: 180,
+  //   height: 180,
+  // });
 
-  const scrollRef = useRef(null);
-  const isScrolled = useWindowScroll(scrollRef);
+  // const scrollRef = useRef(null);
+  // const isScrolled = useWindowScroll(scrollRef);
 
   // FIXME: need reduce bubble size for mobile
+  // useEffect(() => {
+  //   if (showBubble) {
+  //     if (isScrolled.y > yOffset) {
+  //       // Do nothing
+  //     } else {
+  //       setMargin(isScrolled.y);
+  //     }
+  //     if (isScrolled.y >= directionY) {
+  //       setDimensions((prev) => {
+  //         if (prev.width >= 500) {
+  //           return {
+  //             width: 500,
+  //             height: 500,
+  //           };
+  //         } else {
+  //           return {
+  //             width: prev.width + 0.4,
+  //             height: prev.height + 0.4,
+  //           };
+  //         }
+  //       });
+  //     } else {
+  //       setDimensions((prev) => {
+  //         if (prev.width <= 180) {
+  //           return {
+  //             width: 180,
+  //             height: 180,
+  //           };
+  //         } else {
+  //           return {
+  //             width: prev.width - 2.5,
+  //             height: prev.height - 2.5,
+  //           };
+  //         }
+  //       });
+  //     }
+  //     setDirectionY(isScrolled.y);
+  //   }
+
+  //   try {
+  //     bubble.current.style.left = `0%`;
+  //   } catch {
+  //     // do nothing
+  //   }
+  // }, [isScrolled, directionY, yOffset, showBubble]);
+
+  // const dragControls = useDragControls();
+
+  // useEffect(() => {
+  //   if (width <= 500) {
+  //     setDimensions({
+  //       width: 150,
+  //       height: 150,
+  //     });
+  //   }
+  // }, [width]);
+
+  // It keeps the scroll to the top
   useEffect(() => {
-    if (showBubble) {
-      if (isScrolled.y > yOffset) {
-        // Do nothing
-      } else {
-        setMargin(isScrolled.y);
-      }
-      if (isScrolled.y >= directionY) {
-        setDimensions((prev) => {
-          if (prev.width >= 500) {
-            return {
-              width: 500,
-              height: 500,
-            };
-          } else {
-            return {
-              width: prev.width + 1,
-              height: prev.height + 1,
-            };
-          }
-        });
-      } else {
-        setDimensions((prev) => {
-          if (prev.width <= 250) {
-            return {
-              width: 250,
-              height: 250,
-            };
-          } else {
-            return {
-              width: prev.width - 2.5,
-              height: prev.height - 2.5,
-            };
-          }
-        });
-      }
-      setDirectionY(isScrolled.y);
-    }
+    window.scrollTo(0, 0);
+  }, []);
 
-    try {
-      bubble.current.style.left = `0%`;
-    } catch {
-      // do nothing
-    }
-  }, [isScrolled, directionY, yOffset, showBubble]);
-
-  const dragControls = useDragControls();
-
-  useEffect(() => {
-    if (width <= 500) {
-      setDimensions({
-        width: 150,
-        height: 150,
-      });
-    }
-  }, [width]);
   return (
     <React.Fragment>
       <Header
@@ -91,7 +97,7 @@ export default function Base({
         color={headerTextColor}
         isDarkLogo={isDarkLogo}
       />
-      {showBubble && (
+      {/* {showBubble && (
         <div className="bubble-container">
           <motion.div className="drag-area" ref={constraintsRef}></motion.div>
           <motion.div
@@ -118,8 +124,18 @@ export default function Base({
         dragControls={dragControls}
       >
         {children}
-      </motion.div>
+      </motion.div> */}
 
+      <div
+        style={{
+          width: "100%",
+          height: "fit-content",
+          paddingTop: "10vh",
+          overflow: "hidden !important",
+        }}
+      >
+        {children}
+      </div>
       <Footer />
     </React.Fragment>
   );

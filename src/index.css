@@ -55,16 +55,20 @@ canvas {
   height: 100vh;
   opacity: 0;
   z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 .bubble-container div {
   background-color: transparent;
   border: 2px solid #cacaca;
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   position: absolute;
   top: 40%;
   border-radius: 50% 41% 48% 52%;
-  left: calc(40% - 250px);
+  left: calc(40% - 180px);
   animation: bubbleAnimation 4s infinite, grow 2s;
   cursor: pointer;
   z-index: 4;

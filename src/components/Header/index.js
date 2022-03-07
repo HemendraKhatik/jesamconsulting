@@ -10,13 +10,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { useLocalStorage } from "react-use";
 
 export default function Header({ background, color, isDarkLogo }) {
-  const [activeLink, setActiveLink] = useLocalStorage(
-    "activeLink",
-    1
-  );
+  const [activeLink, setActiveLink] = useLocalStorage("activeLink", 1);
 
   const [isNavBarVisible, setIsNavBarVisible] = useState(false);
   const navigate = useNavigate();
+  
   const redirectToHome = () => {
     setActiveLink(-1);
     navigate("/");
