@@ -20,17 +20,17 @@ export default function SecondSection() {
 
       <Button
         action={() => navigate("/application")}
-        style={{ marginTop: width <= 450 ? "2rem" : "5rem" }}
+        style={{ marginTop: width <= 450 ? "2rem" : "4rem" }}
         title="APP-Entwicklung"
       />
       <Button
         action={() => navigate("/software")}
-        style={{ marginTop: width <= 450 ? "2rem" : "5rem" }}
+        style={{ marginTop: width <= 450 ? "2rem" : "4rem" }}
         title="Software-Entwicklung"
       />
       <Button
         action={() => navigate("/website")}
-        style={{ marginTop: width <= 450 ? "2rem" : "5rem" }}
+        style={{ marginTop: width <= 450 ? "2rem" : "4rem" }}
         title="WEB-ENTWICKLUNG"
       />
     </div>
