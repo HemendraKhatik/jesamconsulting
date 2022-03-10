@@ -39,7 +39,7 @@ export default function FirstSection() {
         <div className={Style.right}>
           <div className={Style.radioInputField}>
             <input
-              type="radio"
+              type="checkbox"
               id="App-Entwicklung"
               name="option"
               value="App-Entwicklung"
@@ -49,7 +49,7 @@ export default function FirstSection() {
           </div>
           <div className={Style.radioInputField}>
             <input
-              type="radio"
+              type="checkbox"
               id="Web-Entwicklung"
               name="option"
               value="Web-Entwicklung"
@@ -60,7 +60,7 @@ export default function FirstSection() {
 
           <div className={Style.radioInputField}>
             <input
-              type="radio"
+              type="checkbox"
               id="Software-Entwicklung"
               name="option"
               value="Software-Entwicklung"
@@ -70,7 +70,7 @@ export default function FirstSection() {
           </div>
           <div className={Style.radioInputField}>
             <input
-              type="radio"
+              type="checkbox"
               id="KI-Entwicklung"
               name="option"
               value="KI-Entwicklung"
@@ -80,7 +80,7 @@ export default function FirstSection() {
           </div>
           <div className={Style.radioInputField}>
             <input
-              type="radio"
+              type="checkbox"
               id="KI-Entwicklung"
               name="option"
               value="KI-Entwicklung"

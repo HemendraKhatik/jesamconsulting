@@ -106,7 +106,7 @@
   width: 2.3rem;
   background-color: transparent;
   border: 0.2rem solid #000000;
-  border-radius: 50%;
+  border-radius: 4px;
   position: relative;
 }
 
@@ -118,6 +118,7 @@
 /* When the radio button is checked, add a blue background */
 .radioInputField input:checked ~ .checkmark {
   background-color: var(--background);
+
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */

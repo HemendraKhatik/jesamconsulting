@@ -3,7 +3,7 @@ import Style from "./index.module.css";
 import Logo from "../../assets/logo/light_logo.svg";
 import PhoneIcon from "../../assets/icons/phone.svg";
 import EmailIcon from "../../assets/icons/email.svg";
-import FacebookIcon from "../../assets/icons/facebook.svg";
+import FacebookIcon from "../../assets/icons/linkedin.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
 import { Link } from "react-router-dom";
 
@@ -58,20 +58,52 @@ export default function Footer() {
         </div>
         <div className={Style.right}>
           <div className={Style.contactItem}>
-            <img src={PhoneIcon} alt="jesamconsulting phone icon" />
-            <h1>insert phone numbre</h1>
+            <a href="tel:042179281617">
+              <img src={PhoneIcon} alt="jesamconsulting phone icon" />
+            </a>
+            <a href="tel:042179281617">
+              <h1>0421 79281617</h1>
+            </a>
           </div>
           <div className={Style.contactItem}>
-            <img src={EmailIcon} alt="jesamconsulting phone icon" />
-            <h1>impressum@jesamconsulting.com</h1>
+            <a href="mailto:impressum@jesamconsulting.com">
+              <img src={EmailIcon} alt="jesamconsulting email icon" />
+            </a>
+            <a href="mailto:impressum@jesamconsulting.com">
+              <h1>impressum@jesamconsulting.com</h1>
+            </a>
           </div>
           <div className={Style.contactItem}>
-            <img src={FacebookIcon} alt="jesamconsulting phone icon" />
-            <h2>FACEBOOK</h2>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/company/jesam-consulting-gmbh/"
+            >
+              <img src={FacebookIcon} alt="jesamconsulting Linkedin icon" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/company/jesam-consulting-gmbh/"
+            >
+              <h2>Linkedin</h2>
+            </a>
           </div>
           <div className={Style.contactItem}>
-            <img src={InstagramIcon} alt="jesamconsulting phone icon" />
-            <h2>INSTAGRAM</h2>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/jesamconsulting/"
+            >
+              <img src={InstagramIcon} alt="jesamconsulting INSTAGRAM icon" />
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/jesamconsulting/"
+            >
+              <h2>INSTAGRAM</h2>
+            </a>
           </div>
         </div>
       </div>
