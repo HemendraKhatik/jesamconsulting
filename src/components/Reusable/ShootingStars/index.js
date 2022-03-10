@@ -9,21 +9,7 @@ export default function ShootingStars() {
       <div className="shooting_star"></div>
       <div className="shooting_star"></div>
       <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
+
     </div>
   );
 }
