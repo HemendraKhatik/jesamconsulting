@@ -1,8 +1,10 @@
 import React from "react";
+import ShootingStars from "../../Reusable/ShootingStars";
 import Style from "./index.module.css";
 export default function HeroSection() {
   return (
     <div className={Style.container}>
+      <ShootingStars />
       <h1 className={Style.mainHeading}>
         we create outside
         <br /> the bubble
