@@ -12,8 +12,8 @@ import T3 from "../../../assets/home/tablet/3.png";
 import M1 from "../../../assets/home/mobile/1.png";
 import M2 from "../../../assets/home/mobile/2.png";
 import M3 from "../../../assets/home/mobile/3.png";
-// import Slider from "../../Slider";
 import { useWindowSize } from "react-use";
+
 export default function DesktopCarousel() {
   const { width } = useWindowSize();
   const [imageOne, setImageOne] = useState(D1);
@@ -41,17 +41,8 @@ export default function DesktopCarousel() {
         showStatus={false}
         showArrows={false}
         autoPlay={false}
-        verticalSwipe="natural"
+        verticalSwipe="standard"
       >
-        {/* <div style={{ width: "100%", height: "40vh", backgroundColor: "red" }}>
-        <h1>Webbasierte maßgeschneiderte Lösungen</h1>
-      </div>
-      <div style={{ width: "100%", height: "40vh", backgroundColor: "red" }}>
-        <h1>Webbasierte maßgeschneiderte Lösungen</h1>
-      </div>
-      <div style={{ width: "100%", height: "40vh", backgroundColor: "red" }}>
-        <h1>Webbasierte maßgeschneiderte Lösungen</h1>
-      </div> */}
         <div className={Style.companies}>
           <img src={imageOne} alt="icon " />
           <img src={imageTwo} alt="icon " />

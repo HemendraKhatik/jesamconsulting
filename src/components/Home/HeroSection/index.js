@@ -6,8 +6,7 @@ export default function HeroSection() {
     <div className={Style.container}>
       <ShootingStars />
       <h1 className={Style.mainHeading}>
-        we create outside
-        <br /> the bubble
+        JESAM CONSULTING <br /> GMBH
       </h1>
 
       <p className={Style.mainParagraph}>
