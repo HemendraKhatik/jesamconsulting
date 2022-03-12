@@ -1,6 +1,5 @@
 import React from "react";
 import Style from "./index.module.css";
-import HeroImg from "../../../assets/website/hero.png";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./carousel.css";
@@ -23,7 +22,7 @@ export default function HeroSection() {
               <p className={Style.mainParagraph}>{slide.description}</p>
             </div>
             <div className={Style.right}>
-              <img src={HeroImg} alt="jesamconsulting" />
+              <img src={slide.img} alt="jesamconsulting" />
             </div>
           </div>
         );

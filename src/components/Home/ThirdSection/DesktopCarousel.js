@@ -4,6 +4,8 @@ import Style from "./index.module.css";
 import D1 from "../../../assets/home/desktop/1.png";
 import D2 from "../../../assets/home/desktop/2.png";
 import D3 from "../../../assets/home/desktop/3.png";
+import D4 from "../../../assets/home/desktop/4.png";
+import D5 from "../../../assets/home/desktop/5.png";
 
 import T1 from "../../../assets/home/tablet/1.png";
 import T2 from "../../../assets/home/tablet/2.png";
@@ -49,9 +51,8 @@ export default function DesktopCarousel() {
           <img src={imageThree} alt="icon " />
         </div>
         <div className={Style.companies}>
-          <img src={imageOne} alt="icon " />
-          <img src={imageTwo} alt="icon " />
-          <img src={imageThree} alt="icon " />
+          <img src={D4} alt="icon " />
+          <img src={D5} alt="icon " />
         </div>
         <div className={Style.companies}>
           <img src={imageOne} alt="icon " />
