@@ -1,7 +1,9 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageLoading from "./components/Reusable/PageLoading";
-// import Home from "./Pages";
+
+// for carousel
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 const Home = lazy(() => import("./Pages"));
 const About = lazy(() => import("./Pages/about"));
@@ -9,13 +11,6 @@ const Website = lazy(() => import("./Pages/website"));
 const Application = lazy(() => import("./Pages/application"));
 const Software = lazy(() => import("./Pages/software"));
 const Contact = lazy(() => import("./Pages/contact"));
-
-// import Website from "./Pages/website";
-// import Application from "./Pages/application";
-// import Software from "./Pages/software";
-// import Contact from "./Pages/contact";
-// import About from "./Pages/about";
-
 
 function App() {
   return (
