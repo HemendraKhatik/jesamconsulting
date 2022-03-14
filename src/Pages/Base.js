@@ -76,7 +76,6 @@ export default function Base({
   //   }
   // }, [isScrolled, directionY, yOffset, showBubble]);
 
-  // const dragControls = useDragControls();
 
   // useEffect(() => {
   //   if (width <= 500) {
@@ -123,7 +122,6 @@ export default function Base({
         }}
         drag={false}
         ref={constraintsRef}
-        dragControls={dragControls}
       >
         {children}
       </motion.div> */}
