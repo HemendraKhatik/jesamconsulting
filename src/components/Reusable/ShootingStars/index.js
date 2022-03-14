@@ -1,15 +1,13 @@
 import React from "react";
-import "./index.css";
+import Styles from "./index.module.css";
 
 export default function ShootingStars() {
   return (
-    <div className="night">
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-      <div className="shooting_star"></div>
-
+    <div className={Styles.night}>
+      <div className={Styles.shooting_star}></div>
+      <div className={Styles.shooting_star}></div>
+      <div className={Styles.shooting_star}></div>
+      <div className={Styles.shooting_star}></div>
     </div>
   );
 }
