@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  width: 35%;
+  height: 50vh;
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.innerContainer button {
+  width: 15rem;
+  height: 3rem;
+  background-color: #ccff00;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.innerContainer button:hover {
+  opacity: 0.8;
+}
+.heading {
+  font-size: 1.8rem;
+}
+
+.subHeading {
+  font-size: 1.3rem;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 950px) {
+  .innerContainer {
+    width: 65%;
+    height: 50vh;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+    .innerContainer {
+      width: 90%;
+      height: 50vh;
+    }
+  }
+  

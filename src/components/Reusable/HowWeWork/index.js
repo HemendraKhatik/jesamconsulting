@@ -15,6 +15,9 @@ export default function HowWeWork() {
   const redirectToAboutPage = () => {
     navigate("/about");
   };
+  const redirectToContactPage = () => {
+    navigate("/contact");
+  };
   return (
     <React.Fragment>
       <div className={Style.row}>
@@ -35,6 +38,7 @@ export default function HowWeWork() {
       <div className={Style.buttonContainer}>
         <Button action={redirectToAboutPage} title="Über uns" />
         <Button
+         action={redirectToContactPage}
           style={{ marginTop: size <= 450 ? "5rem" : 0 }}
           title="Kostenlos beraten lassen"
         />

@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../Reusable/Button";
 import HowWeWork from "../../Reusable/HowWeWork";
 import Style from "./index.module.css";
 
 export default function FourthSection() {
+  const navigate = useNavigate();
 
+  const redirectToContactPage = () => {
+    navigate("/contact");
+  };
   return (
     <div className={Style.fourthSectionContainer}>
       <p className={Style.mainParagraph}>
@@ -25,7 +30,11 @@ export default function FourthSection() {
         Transformation erfolgreich begleitet.
       </p>
 
-      <Button style={{ marginTop: "5rem" }} title="Kostenlos beraten lassen" />
+      <Button
+        action={redirectToContactPage}
+        style={{ marginTop: "5rem" }}
+        title="Kostenlos beraten lassen"
+      />
 
       <HowWeWork />
     </div>
