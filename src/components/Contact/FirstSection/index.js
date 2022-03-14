@@ -2,9 +2,12 @@ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Reusable/Button";
+import PopUp from "../PopUp";
 import Style from "./index.module.css";
 
 export default function FirstSection() {
+  const [popUp, setPopUp] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,26 +24,21 @@ export default function FirstSection() {
   };
 
   const submit = () => {
+    setLoading(true);
     const data = {
       firstName,
       lastName,
       email,
       phone,
-      appDevelopment,
-      webDevelopment,
-      softwareDevelopment,
-      aiDevelopment,
-      consulting,
       queryType: {
-        appDev: appDevelopment,
-        webDev: webDevelopment,
-        softwareEng: softwareDevelopment,
-        ai: aiDevelopment,
-        consulting: consulting,
+        appDevelopment,
+        webDevelopment,
+        softwareDevelopment,
+        aiDevelopment,
+        consulting,
       },
     };
 
-    return
     axios({
       method: "POST",
       url: "https://mysterious-woodland-24203.herokuapp.com/sendMail",
@@ -50,14 +48,26 @@ export default function FirstSection() {
       },
     })
       .then((res) => {
-        // console.log("res", JSON.stringify(res));
+        setPopUp(true);
+        setLoading(false);
       })
       .catch((err) => {
-        // console.log("err", err);
+        console.log("err", err);
+        setLoading(false);
       });
   };
   return (
     <div className={Style.container}>
+      {/* Popup */}
+
+      {popUp && (
+        <PopUp
+          action={() => {
+            setPopUp(false);
+          }}
+        />
+      )}
+
       <div className={Style.upperContainer}>
         <div className={Style.left}>
           <h1 className={Style.mainHeading}>Kostenlos beraten lassen</h1>
@@ -202,6 +212,7 @@ export default function FirstSection() {
             }}
             title="Absenden"
             action={submit}
+            loading={loading}
           />
         </div>
       </div>

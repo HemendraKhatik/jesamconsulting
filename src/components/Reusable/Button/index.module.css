@@ -1,6 +1,7 @@
 .cta {
   background-color: var(--primary-background);
   width: fit-content;
+  min-width: 10rem;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 900;
@@ -11,8 +12,39 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
 .cta:hover {
   opacity: 0.8;
+}
+
+.loadingContainer {
+  width: 15rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  width: 2rem;
+  height: 2rem;
+  background-color: #000000;
+  border-left: 0.3rem solid #ccff00;
+  border-right: 0.3rem solid #ccff00;
+  border-top: 0.3rem solid #ccff00;
+  border-bottom: 0.3rem solid #000000;
+  border-radius: 5rem;
+  animation: spin 0.6s infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -20,11 +52,20 @@
     font-size: 2rem;
     padding: 0px 3rem;
   }
+  .loadingContainer {
+    width: 12rem;
+    height: 5rem;
+  }
 }
 
 @media screen and (max-width: 540px) {
   .cta {
     font-size: 1.6rem;
     padding: 0px 3rem;
+  }
+
+  .loadingContainer {
+    width: 8rem;
+    height: 5rem;
   }
 }
