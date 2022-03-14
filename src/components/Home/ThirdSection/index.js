@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import Style from "./index.module.css";
 import Tab from "../Svg/Sound/Tab";
 import DesktopCarousel from "./DesktopCarousel";
